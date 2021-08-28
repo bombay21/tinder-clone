@@ -1,12 +1,7 @@
-import React from 'react'
 import axios from 'axios'
 
-function AxiosGateway() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const AxiosGateway = axios.create({
+  baseURL: "https://tinder-backend-tijman.herokuapp.com",
+});
 
 export default AxiosGateway
